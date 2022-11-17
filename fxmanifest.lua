@@ -13,3 +13,5 @@ client_scripts {
 	'config_cl.lua',
 	'client/main.lua'
 }
+
+shared_script '@es_extended/imports.lua'
