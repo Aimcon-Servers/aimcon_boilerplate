@@ -2,16 +2,23 @@ fx_version 'adamant'
 
 game 'gta5'
 
-version '1.1'
+author 'Aimcon'
+
+version '1.0'
+
+lua54 'yes'
 
 server_scripts {
 	'config_sv.lua',
-	'server/main.lua'
+	'server/*.lua',
 }
 
 client_scripts {
 	'config_cl.lua',
-	'client/main.lua'
+	'client/*.lua',
 }
 
-shared_script '@es_extended/imports.lua'
+shared_script {
+	'@es_extended/imports.lua',
+	'@ox_lib/init.lua'
+}
