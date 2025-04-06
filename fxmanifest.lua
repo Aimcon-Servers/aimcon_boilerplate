@@ -9,6 +9,7 @@ version '1.0'
 lua54 'yes'
 
 server_scripts {
+	'@oxmysql/lib/MySQL.lua',
 	'config_sv.lua',
 	'server/*.lua',
 }
